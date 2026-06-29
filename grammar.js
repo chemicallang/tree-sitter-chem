@@ -22,6 +22,8 @@ module.exports = grammar({
 
   word: ($) => $.identifier,
 
+  conflicts: ($) => [[$.function_definition]],
+
   rules: {
     source_file: ($) =>
       repeat(
@@ -33,7 +35,6 @@ module.exports = grammar({
           $.impl_block,
           $.enum_definition,
           $.namespace_definition,
-          $.block,
           $.expression,
           ";",
         ),
