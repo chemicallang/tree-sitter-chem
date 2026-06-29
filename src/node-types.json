@@ -50,6 +50,10 @@
           "named": true
         },
         {
+          "type": "list",
+          "named": true
+        },
+        {
           "type": "number",
           "named": true
         },
@@ -112,6 +116,21 @@
         },
         {
           "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "expression",
           "named": true
         }
       ]
@@ -227,6 +246,10 @@
     "named": false
   },
   {
+    "type": ",",
+    "named": false
+  },
+  {
     "type": ":",
     "named": false
   },
@@ -240,6 +263,14 @@
   },
   {
     "type": "@static",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
     "named": false
   },
   {

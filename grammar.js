@@ -127,12 +127,16 @@ module.exports = grammar({
     block: ($) =>
       seq("{", repeat(choice($.expression, ";")), "}"),
 
+    list: ($) =>
+      seq("[", repeat(seq($.expression, optional(","))), "]"),
+
     expression: ($) =>
       choice(
         $.identifier,
         $.string,
         $.number,
         $.block,
+        $.list,
       ),
 
     number: ($) => /\d[\d_]*([eE][+-]?\d+)?/,
