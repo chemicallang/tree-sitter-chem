@@ -1,0 +1,15 @@
+[package]
+name = "tree-sitter-chem"
+version = "0.1.0"
+description = "Chemical programming language Tree-sitter grammar"
+license = "MIT"
+edition = "2021"
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[build-dependencies]
+cc = "1.0"
+
+[dependencies]
+tree-sitter = "0.22"
