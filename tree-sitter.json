@@ -1,0 +1,28 @@
+{
+  "grammars": [{
+    "name": "chemical",
+    "camelcase": "Chemical",
+    "scope": "source.chemical",
+    "path": ".",
+    "file-types": ["ch"],
+    "highlights": ["queries/highlights.scm"],
+    "injections": [],
+    "indents": ["queries/indents.scm"],
+    "folds": ["queries/folds.scm"]
+  }],
+  "metadata": {
+    "name": "chemical",
+    "description": "Chemical programming language grammar",
+    "authors": ["Chemical Language Foundation"],
+    "license": "MIT",
+    "version": "0.1.0"
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
